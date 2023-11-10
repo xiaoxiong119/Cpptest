@@ -11,7 +11,7 @@ int main() {
 
     // 检查输入是否合法
     while (number <= 0) {
-        std::cout << "请确保输入的是正数，请重新输入：";
+        std::cout << "请确保输入的是正数,请重新输入：";
         std::cin >> number;
     }
 
@@ -21,7 +21,7 @@ int main() {
 
     // 检查输入是否合法
     while (base <= 0 || base == 1) {
-        std::cout << "请确保底数是正数且不等于1，请重新输入：";
+        std::cout << "请确保底数是正数且不等于1,请重新输入：";
         std::cin >> base;
     }
 
