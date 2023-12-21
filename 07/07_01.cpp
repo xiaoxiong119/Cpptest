@@ -11,7 +11,7 @@ int main() {
     cv::imshow("Image", image);
     int key = cv::waitKey(0);
 
-    if (key == 27) {  // ASCII code for Esc key
+    if (key == 27) {  
         return 0;
     }
 
@@ -34,13 +34,13 @@ int main() {
         cv::imshow("Video", frame);
         key = cv::waitKey(30);
 
-        if (key == 27) {  // ASCII code for Esc key
+        if (key == 27) {  
             break;
         }
     }
 
     // (3) 开启计算机摄像头
-    cv::VideoCapture camera(0);  // 0 corresponds to the default camera
+    cv::VideoCapture camera(0);  
     if (!camera.isOpened()) {
         std::cerr << "Failed to open camera!" << std::endl;
         return -1;
@@ -58,7 +58,7 @@ int main() {
         cv::imshow("Camera", frame);
         key = cv::waitKey(30);
 
-        if (key == 27) {  // ASCII code for Esc key
+        if (key == 27) {  
             break;
         }
     }
